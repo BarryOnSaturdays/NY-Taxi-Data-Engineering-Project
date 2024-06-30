@@ -79,7 +79,7 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
-    - ./dbt:/home/airflow/dbt:ro
+    - ./dbt:/home/airflow/dbt
     - ./.dbt:/home/airflow/.dbt:ro
     - ./credential.json:/home/airflow/.google/credential.json:ro
   user: "${AIRFLOW_UID:-50000}:0"
