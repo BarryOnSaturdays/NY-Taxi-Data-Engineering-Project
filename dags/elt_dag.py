@@ -55,7 +55,7 @@ default_args = {
 
 with DAG(
     dag_id = "gcs_bq_dbt_dag",
-    schedule_interval = None,
+    schedule_interval = '@weekly',
     default_args = default_args,
     catchup = False,
     max_active_runs = 1,
