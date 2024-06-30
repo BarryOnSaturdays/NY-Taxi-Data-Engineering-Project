@@ -2,4 +2,5 @@ pandas
 pyarrow
 google-cloud-storage
 dbt-bigquery
-airflow
+apache-airflow
+apache-airflow-providers-google
